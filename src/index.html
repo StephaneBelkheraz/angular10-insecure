@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VulnerableAngularApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- VULNÉRABILITÉ: Pas de CSP (Content Security Policy) -->
+  <!-- VULNÉRABILITÉ: Pas de headers de sécurité -->
+</head>
+<body>
+  <app-root></app-root>
+  <!-- VULNÉRABILITÉ: Inclusion de scripts externes non sécurisés -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+</body>
+</html>
